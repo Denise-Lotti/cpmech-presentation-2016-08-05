@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Workshop 05-08-2016 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/white.css" id="theme">
+</head>
+
+<body>
+
+<div class="reveal">
+
+<div class="slides">
+
+<section>
+        <h2>Constitutive modelling of sands using artificial neural networks</h2>
+        <p>Denise Reimann</p>
+	<p>  05-08-2016 </p>
+</section>
+
+<section>
+    <h3>Contents</h3>
+	<ul>
+	<li>Ultrasound propagation in porous media</li>
+	<ul>
+	<li> Motivation and Experiments </li>
+	<li> Results </li>
+	</ul>
+	<li> Constitutive modelling using artificial neural networks </li>
+	<ul>
+	<li> Introduction </li>
+	<li> Current work </li>
+	<li> Aim - Future work </li>
+	</ul>
+	</ul>
+</section>
+
+<section>
+        <h3>Ultrasound propagation</h3>
+	<h4>Motivation and Experiments</h4>
+	<img data-src="pictures/tests_fft.png"> 
+
+<aside class="notes">
+Motivation: bone, oil/gas exploration
+dispersive parameters
+used sample is idealised
+used test cells presented
+wave propagates from A to B
+
+raw signal has different areas
+coherent pulse: considered signal
+incoherent pulse: scattering and other wave type
+reflected signal
+procedure: isolation of signal, FFT of signal
+</aside>
+</section>
+
+<section>
+        <h3>Ultrasound propagation</h3>
+	<h4>Results</h4>
+	<img data-src="pictures/alphas_eq.png"> 
+
+<aside class="notes">
+linear relation to f into valid frequency range
+best fit straight line
+slope corresponds to density/porosity
+</aside>
+</section>
+
+<section>
+        <h3>Constitutive modelling using artificial neural networks</h3>
+	<h4>Introduction</h4>
+	
+	<table>
+	<tr>
+	<th> Conventional digital computers </th>
+	<th> Artificial neural networks </th>
+	</tr>
+	<tr>
+	<td> speeds-up human brain computation </td>
+	<td> copies human brain computation </td>
+	</tr>
+	<tr>
+	<td> employs complex sets of equations </td>
+	<td> computationally and algorithmically very simple </td>
+	</tr>
+	<tr>
+	<td> result can not be translated to similar problems</td>
+	<td> allows to solve problems for a wide range </td>
+	</tr>
+	</table>
+
+	<p align='left'> D. Graupe: Principle of Artificial Neural Networks (2013) </p>
+	
+<aside class="notes">
+shortly mention differences
+examples image recognition: face recognition, handwritten digits, autonomous driving
+</aside>
+</section>
+
+<section>
+        <h3>Constitutive modelling using artificial neural networks</h3>
+	<h4>Current Work</h4>
+	<img data-src="pictures/NN_structure.png"> 
+
+<aside class="notes">
+example of neural network structure
+2/3: error values -> very different for two runs (not good)
+</aside>
+</section>
+
+<section>
+        <h3>Constitutive modelling using artificial neural networks</h3>
+	<h4>Current Work</h4>
+	<img data-src="pictures/errors.png"> 
+
+<aside class="notes">
+error values -> very different for two runs (not good)
+</aside>
+</section>
+
+<section>
+        <h3>Constitutive modelling using artificial neural networks</h3>
+	<h4>Future Work</h4>
+	<img data-src="pictures/figure_paper.png"> 
+	
+	<p align='left'> Martinez, Carvajal, Farias, Pedroso: An articial neural network model for the stress-strain Relation of sands </p>	
+
+<aside class="notes">
+modify code
+desirable: nearly perfect accuracy for most of random runs; easy to adapt to other soil data problems
+</aside>
+</section>
+
+
+
+    </section>
+
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+Reveal.initialize({
+    history: true,
+    transition: 'linear',
+    slideNumber: 'c/t',
+
+    math: {
+        config: 'TeX-AMS_HTML-full'
+    },
+
+    dependencies: [
+        { src: 'lib/js/classList.js' },
+        { src: 'plugin/math/math.js', async: true }
+    ]
+});
+
+</script>
+
+</body>
+</html>
