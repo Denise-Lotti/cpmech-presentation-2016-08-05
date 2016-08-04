@@ -18,30 +18,30 @@
 <section>
         <h2>Constitutive modelling of sands using artificial neural networks</h2>
         <p>Denise Reimann</p>
-	<p>  05-08-2016 </p>
+        <p>  05-08-2016 </p>
 </section>
 
 <section>
     <h3>Contents</h3>
-	<ul>
-	<li>Ultrasound propagation in porous media</li>
-	<ul>
-	<li> Motivation and Experiments </li>
-	<li> Results </li>
-	</ul>
-	<li> Constitutive modelling using artificial neural networks </li>
-	<ul>
-	<li> Introduction </li>
-	<li> Current work </li>
-	<li> Aim - Future work </li>
-	</ul>
-	</ul>
+        <ul>
+        <li>Past work: Ultrasound propagation in porous media</li>
+        <ul>
+        <li> Motivation and Experiments </li>
+        <li> Results </li>
+        </ul>
+        <li> Constitutive modelling using artificial neural networks </li>
+        <ul>
+        <li> Introduction </li>
+        <li> Current work </li>
+        <li> Conclusion </li>
+        </ul>
+        </ul>
 </section>
 
 <section>
         <h3>Ultrasound propagation</h3>
-	<h4>Motivation and Experiments</h4>
-	<img data-src="pictures/tests_fft.png"> 
+        <h4>Motivation and Experiments</h4>
+        <img data-src="pictures/tests_fft.png">
 
 <aside class="notes">
 Motivation: bone, oil/gas exploration
@@ -60,8 +60,8 @@ procedure: isolation of signal, FFT of signal
 
 <section>
         <h3>Ultrasound propagation</h3>
-	<h4>Results</h4>
-	<img data-src="pictures/alphas_eq.png"> 
+        <h4>Results</h4>
+        <img data-src="pictures/alphas_eq.png">
 
 <aside class="notes">
 linear relation to f into valid frequency range
@@ -72,29 +72,29 @@ slope corresponds to density/porosity
 
 <section>
         <h3>Constitutive modelling using artificial neural networks</h3>
-	<h4>Introduction</h4>
-	
-	<table>
-	<tr>
-	<th> Conventional digital computers </th>
-	<th> Artificial neural networks </th>
-	</tr>
-	<tr>
-	<td> speeds-up human brain computation </td>
-	<td> copies human brain computation </td>
-	</tr>
-	<tr>
-	<td> employs complex sets of equations </td>
-	<td> computationally and algorithmically very simple </td>
-	</tr>
-	<tr>
-	<td> result can not be translated to similar problems</td>
-	<td> allows to solve problems for a wide range </td>
-	</tr>
-	</table>
+        <h4>Introduction</h4>
 
-	<p align='left'> D. Graupe: Principle of Artificial Neural Networks (2013) </p>
-	
+        <table>
+        <tr>
+        <th> Conventional digital computers </th>
+        <th> Artificial neural networks </th>
+        </tr>
+        <tr>
+        <td> speeds-up human brain computation </td>
+        <td> copies human brain computation </td>
+        </tr>
+        <tr>
+        <td> employs complex sets of equations </td>
+        <td> computationally and algorithmically very simple </td>
+        </tr>
+        <tr>
+        <td> result can not be translated to similar problems</td>
+        <td> allows to solve problems for a wide range </td>
+        </tr>
+        </table>
+
+        <p align='left'> D. Graupe: Principle of Artificial Neural Networks (2013) </p>
+
 <aside class="notes">
 shortly mention differences
 examples image recognition: face recognition, handwritten digits, autonomous driving
@@ -103,19 +103,19 @@ examples image recognition: face recognition, handwritten digits, autonomous dri
 
 <section>
         <h3>Constitutive modelling using artificial neural networks</h3>
-	<h4>Current Work</h4>
-	<img data-src="pictures/NN_structure.png"> 
+        <h4>Current Work</h4>
+        <img data-src="pictures/NN_structure.png">
 
 <aside class="notes">
 example of neural network structure
-2/3: error values -> very different for two runs (not good)
+different tools possible, e.g. tensorflow
 </aside>
 </section>
 
 <section>
         <h3>Constitutive modelling using artificial neural networks</h3>
-	<h4>Current Work</h4>
-	<img data-src="pictures/errors.png"> 
+        <h4>Current Work</h4>
+        <img data-src="pictures/errors.png">
 
 <aside class="notes">
 error values -> very different for two runs (not good)
@@ -124,10 +124,17 @@ error values -> very different for two runs (not good)
 
 <section>
         <h3>Constitutive modelling using artificial neural networks</h3>
-	<h4>Future Work</h4>
-	<img data-src="pictures/figure_paper.png"> 
-	
-	<p align='left'> Martinez, Carvajal, Farias, Pedroso: An articial neural network model for the stress-strain Relation of sands </p>	
+        <h4>Conclusion</h4>
+        <ul>
+        <li> Python is easy, short and fast </li>
+        <li> Tensorflow
+        <ul>
+        <li> helpful and easy toolbox </li>
+        <li> functions not transparent (difficult error analysis) </li>
+        </ul>
+        <li> Current data set might be too small </li>
+        <ul>
+
 
 <aside class="notes">
 modify code
@@ -135,7 +142,9 @@ desirable: nearly perfect accuracy for most of random runs; easy to adapt to oth
 </aside>
 </section>
 
-
+<section>
+  <h3> Thank you for your attention </h3>
+</section>
 
     </section>
 
